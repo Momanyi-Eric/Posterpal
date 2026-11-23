@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PosterPal: Free Poster and Caption Maker for Small Businesses</title>
+<meta name="description" content="Free poster and caption maker for small businesses. Pick your business type, choose a design, add your offer and phone number, then download a ready poster and copy a caption for Facebook, Instagram or WhatsApp Status.">
+<link rel="canonical" href="https://posterpal.netlify.app/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#10243E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PosterPal">
+<meta property="og:title" content="PosterPal: Free Poster and Caption Maker for Small Businesses">
+<meta property="og:description" content="Free poster and caption maker for small businesses. Pick your business type, choose a design, add your offer and phone number, then download a ready poster and copy a caption for Facebook, Instagram or WhatsApp Status.">
+<meta property="og:url" content="https://posterpal.netlify.app/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%96%BC%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"PosterPal","url":"https://posterpal.netlify.app/","applicationCategory":"DesignApplication","operatingSystem":"Any","description":"Free poster and caption maker for small businesses. Pick your business type, choose a design, add your offer and phone number, then download a ready poster and copy a caption for Facebook, Instagram or WhatsApp Status.","offers":{"@type":"Offer","price":"0","priceCurrency":"KES"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>PosterPal</h1>
+  <p>Pick a business, fill in your offer, download a poster and caption.</p>
+</header>
+<main>
+  <div class="controls">
+    <section class="panel">
+      <h2>Business type</h2>
+      <div class="chips" id="types"></div>
+    </section>
+    <section class="panel">
+      <h2>Choose a design</h2>
+      <div id="tpls"></div>
+      <h2 style="margin-top:16px">Accent colour</h2>
+      <div class="chips" id="accs"></div>
+    </section>
+    <section class="panel">
+      <h2>Your details</h2>
+      <label for="f-name">Business name</label><input id="f-name" maxlength="40" autocomplete="off">
+      <label for="f-head">Headline</label><input id="f-head" maxlength="40" autocomplete="off">
+      <label for="f-price">Price or offer</label><input id="f-price" maxlength="30" autocomplete="off">
+      <label for="f-det">Details</label><input id="f-det" maxlength="110" autocomplete="off">
+      <label for="f-phone">Phone or WhatsApp</label><input id="f-phone" maxlength="24" inputmode="tel" autocomplete="off">
+    </section>
+  </div>
+  <div class="stage">
+    <canvas id="cv" width="1080" height="1080" role="img" aria-label="Poster preview"></canvas>
+    <div class="row">
+      <button class="btn main" id="dl">Download poster</button>
+      
+    </div>
+    <section class="panel" style="margin-top:16px">
+      <h2>Caption for Facebook, Instagram or WhatsApp</h2>
+      <textarea id="cap" aria-label="Caption"></textarea>
+      <div class="row"><button class="btn" id="copy">Copy caption</button></div>
+      <p class="note" id="copied" aria-live="polite"></p>
+    </section>
+  </div>
+</main>
+
+<section class="about" id="about">
+  <h2>About PosterPal</h2>
+  <p>PosterPal is a free poster and caption maker for small businesses. Salons, shops, restaurants, boutiques, churches and event organisers can make a clean, professional poster in about a minute, with no design skills, no sign-up and no app to install.</p>
+  <p>Most small businesses need to post new offers every day on Facebook, Instagram and WhatsApp Status, but few have the time or the tools to design them. PosterPal gives you ready-made designs, so you only type your details and download.</p>
+  <h3>How it works</h3>
+  <ol>
+    <li>Choose your business type: salon, shop, restaurant, boutique, or church and events.</li>
+    <li>Pick one of nine poster designs and an accent colour.</li>
+    <li>Type your business name, headline, price or offer, details and phone number.</li>
+    <li>Download your poster as a PNG image and copy the caption that is written for you, with emojis and hashtags.</li>
+  </ol>
+  <h3>Questions</h3>
+  <p><strong>Is PosterPal really free?</strong> Yes. There are no download limits, no watermark and no account to create.</p>
+  <p><strong>Where can I use my posters?</strong> The square image works well on Facebook, Instagram, WhatsApp Status and Telegram, and it prints well on a flyer.</p>
+  <p><strong>Is my information saved?</strong> No. Your details stay in your browser. The poster is made on your own device and is never uploaded.</p>
+</section>
+<footer>© 2026 PosterPal. Free poster maker for small businesses.</footer>
+<script src="script.js"></script>
+</body>
+</html>
